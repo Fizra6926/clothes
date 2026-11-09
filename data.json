@@ -1,0 +1,210 @@
+{
+ "products": [
+  {
+   "id": 1,
+   "name": "Classic blue tee",
+   "cat": "men",
+   "price": 1500,
+   "color": "#222",
+   "img": "/uploads/6eca0cc88c4fbb8a.jpg"
+  },
+  {
+   "id": 2,
+   "name": "Oversized hoodie",
+   "cat": "men",
+   "price": 3800,
+   "color": "#3b3b3b",
+   "img": "/uploads/8fc27e4a15110e6c.jpg",
+   "cols": []
+  },
+  {
+   "id": 3,
+   "name": "Denim shirt",
+   "cat": "men",
+   "price": 3200,
+   "color": "#2d4a73",
+   "img": "/uploads/a80c2f0db7c59259.jpg"
+  },
+  {
+   "id": 4,
+   "name": "Kurta shalwar",
+   "cat": "men",
+   "price": 4500,
+   "color": "#d8d2c4",
+   "img": "/uploads/48a091b15abf8171.jpg"
+  },
+  {
+   "id": 5,
+   "name": "Red sari suit",
+   "cat": "women",
+   "price": 4200,
+   "color": "#b5395e",
+   "img": "/uploads/d06b91483c3e7fc1.jpg"
+  },
+  {
+   "id": 6,
+   "name": "Silk abaya",
+   "cat": "women",
+   "price": 6500,
+   "color": "#111",
+   "img": "/uploads/92d1fdffa7b5b5a0.jpg"
+  },
+  {
+   "id": 7,
+   "name": "Pastel kurti",
+   "cat": "women",
+   "price": 2800,
+   "color": "#e7a9b8",
+   "img": "/uploads/74bc93ce8dd5f484.jpg"
+  },
+  {
+   "id": 8,
+   "name": "Casual cardigan",
+   "cat": "women",
+   "price": 3600,
+   "color": "#8a6f5a",
+   "img": "/uploads/eb2fdcbda0876d9c.jpg"
+  },
+  {
+   "id": 9,
+   "name": "Kids graphic tee",
+   "cat": "kids",
+   "price": 1200,
+   "color": "#e8a317",
+   "img": "/uploads/ff252a13145ac001.jpg"
+  },
+  {
+   "id": 10,
+   "name": "Kids hoodie",
+   "cat": "kids",
+   "price": 2400,
+   "color": "#2e8b6e",
+   "img": "/uploads/0a551bd8f0485e7f.jpg"
+  },
+  {
+   "id": 11,
+   "name": "Little shalwar kameez",
+   "cat": "kids",
+   "price": 2900,
+   "color": "#4a6fd0",
+   "img": "/uploads/4c641a217c6bea7c.jpg"
+  },
+  {
+   "id": 12,
+   "name": "Kids denim jacket",
+   "cat": "kids",
+   "price": 3100,
+   "color": "#3d5a80",
+   "img": "/uploads/7654c5f9c621ee27.jpg"
+  }
+ ],
+ "heroes": [
+  {
+   "img": "/uploads/070ab25d092c03d8.jpg"
+  },
+  {
+   "img": "/uploads/6a707dc172278ff3.jpg"
+  },
+  {
+   "img": "/uploads/64010a896a0aac6d.jpg"
+  }
+ ],
+ "catImgs": {
+  "men": "/uploads/6fef54a3cb1cf5b4.jpg",
+  "women": "/uploads/91d519f4a31e0674.jpg",
+  "kids": "/uploads/401d282bc445faf9.jpg"
+ },
+ "reviews": [],
+ "orders": [
+  {
+   "id": "f5e7d8f823",
+   "no": "#1006",
+   "date": "09/11/2026, 03:27:05",
+   "name": "lala",
+   "phone": "03493616878",
+   "city": "hyderabab",
+   "email": "fizra9096@gmail.com",
+   "addr": "tyioshali road | Email: fizra9096@gmail.com",
+   "pay": "Cash on delivery",
+   "items": "1 x Denim shirt (M)",
+   "total": 3200,
+   "status": "Delivered",
+   "notified": true
+  },
+  {
+   "id": "7dc9330824",
+   "no": "#1005",
+   "date": "09/11/2026, 01:48:12",
+   "name": "lala",
+   "phone": "03493616878",
+   "city": "hyderabab",
+   "email": "fizra9096@gmail.com",
+   "addr": "tyioshali road | Email: fizra9096@gmail.com",
+   "pay": "Cash on delivery",
+   "items": "1 x Denim shirt (M, black)\n1 x Kurta shalwar (M, black)",
+   "total": 7700,
+   "status": "Delivered",
+   "notified": true
+  },
+  {
+   "id": "1208d4a687",
+   "no": "#1004",
+   "date": "09/11/2026, 01:27:24",
+   "name": "lala",
+   "phone": "03493616878",
+   "city": "hyderabab",
+   "email": "fizra9096@gmail.com",
+   "addr": "tyioshali road | Email: fizra9096@gmail.com",
+   "pay": "Cash on delivery",
+   "items": "1 x Pastel kurti (M, black)\n1 x Casual cardigan (M, black)",
+   "total": 6400,
+   "status": "Pending",
+   "notified": false
+  },
+  {
+   "id": "9d834ad99d",
+   "no": "#1003",
+   "date": "09/11/2026, 01:22:31",
+   "name": "lala",
+   "phone": "03493616878",
+   "city": "hyderabab",
+   "email": "fizra9096@gmail.com",
+   "addr": "tyioshali road | Email: fizra9096@gmail.com",
+   "pay": "Cash on delivery",
+   "items": "1 x Denim shirt (M, black)",
+   "total": 3200,
+   "status": "Delivered",
+   "notified": false
+  },
+  {
+   "id": "9648524714",
+   "no": "#1002",
+   "date": "09/11/2026, 01:15:49",
+   "name": "lala",
+   "phone": "03493616878",
+   "city": "hyderabab",
+   "email": "fizra8844@gmail.com",
+   "addr": "tyioshali road | Email: fizra8844@gmail.com",
+   "pay": "Cash on delivery",
+   "items": "1 x Kurta shalwar (M, black)\n1 x Denim shirt (M, red)\n1 x Oversized hoodie (M, black)",
+   "total": 11500,
+   "status": "Delivered",
+   "notified": false
+  },
+  {
+   "id": "5748b4237e",
+   "no": "#1001",
+   "date": "09/11/2026, 01:14:42",
+   "name": "lala",
+   "phone": "03493616878",
+   "city": "hyderabab",
+   "email": "fizra8844@gmail.com",
+   "addr": "tyioshali road | Email: fizra8844@gmail.com",
+   "pay": "Cash on delivery",
+   "items": "1 x Kurta shalwar (M, black)\n1 x Denim shirt (M, black)",
+   "total": 7700,
+   "status": "Delivered",
+   "notified": false
+  }
+ ]
+}
