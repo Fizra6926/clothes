@@ -1,14 +1,18 @@
 require('dotenv').config();
 const express = require('express'), fs = require('fs'), path = require('path'), crypto = require('crypto'), nodemailer = require('nodemailer');
 const E = process.env, PORT = E.PORT || 3000, BASE = (E.BASE_URL || 'http://localhost:' + PORT).replace(/\/$/, '');
-const STORE = E.STORE_EMAIL || E.GMAIL_USER, PASS = E.ADMIN_PASSWORD || 'admin123';
+const STORE = E.STORE_EMAIL || E.GMAIL_USER, PASS = E.ADMIN_PASSWORD || 'admin321';
 const DB = path.join(__dirname, 'data.json'), UP = path.join(__dirname, 'uploads');
 fs.mkdirSync(UP, { recursive: true });
 
 const seedP = [['Classic black tee','men',1500,'#222'],['Oversized hoodie','men',3800,'#3b3b3b'],['Denim shirt','men',3200,'#2d4a73'],['Kurta shalwar','men',4500,'#d8d2c4'],['Floral lawn suit','women',4200,'#b5395e'],['Silk abaya','women',6500,'#111'],['Pastel kurti','women',2800,'#e7a9b8'],['Casual cardigan','women',3600,'#8a6f5a'],['Kids graphic tee','kids',1200,'#e8a317'],['Kids hoodie','kids',2400,'#2e8b6e'],['Little shalwar kameez','kids',2900,'#4a6fd0'],['Kids denim jacket','kids',3100,'#3d5a80']];
 const seed = () => ({ products: seedP.map((a, i) => ({ id: i + 1, name: a[0], cat: a[1], price: a[2], color: a[3], img: '' })), heroes: [], catImgs: {}, reviews: [], orders: [] });
-const load = () => { try { return JSON.parse(fs.readFileSync(DB, 'utf8')); } catch (e) { return seed(); } };
-const save = d => fs.writeFileSync(DB, JSON.stringify(d, null, 1));
+// const load = () => { try { return JSON.parse(fs.readFileSync(DB, 'utf8')); } catch (e) { return seed(); } };
+
+// const save = d => fs.writeFileSync(DB, JSON.stringify(d, null, 1));
+
+const load = async () => { const doc = await DB.collection('store').doc('data').get();return doc.exists ? doc.data(): seed();}; 
+const save = async (d)=>{await DB.collection ('store').doc('data'). set(d);}
 if (!fs.existsSync(DB)) save(seed());
 
 const mailer = nodemailer.createTransport({ service: 'gmail', auth: { user: E.GMAIL_USER, pass: (E.GMAIL_APP_PASSWORD || '').replace(/\s/g, '') } });
