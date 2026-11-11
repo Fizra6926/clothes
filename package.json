@@ -1,0 +1,30 @@
+{
+  "name": "noir-wear-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "homepage": "https://github.com/Fizra6926/clothes#readme",
+  "bugs": {
+    "url": "https://github.com/Fizra6926/clothes/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fizra6926/clothes.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.14"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18"
+  }
+}
